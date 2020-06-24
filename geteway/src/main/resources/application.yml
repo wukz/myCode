@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gateway
+
+#配置注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#定义网关端口
+server:
+  port: 9000
+
+#自定义请求url
+zuul:
+  routes:
+    client: /c/**

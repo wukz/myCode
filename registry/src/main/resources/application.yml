@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: registry
+server:
+  port: 8761
+eureka:
+  client:
+    #开启eureka服务时，服务端不进行注册
+    fetch-registry: false
+    register-with-eureka: false
